@@ -19,5 +19,8 @@
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
-  "homepage": "https://github.com/ninja095/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/ninja095/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
