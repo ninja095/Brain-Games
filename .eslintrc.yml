@@ -7,6 +7,10 @@ env:
 
 extends:
   - 'airbnb-base'
+
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module  
   
 rules:
   no-console: 0
