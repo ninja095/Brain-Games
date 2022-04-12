@@ -4,11 +4,13 @@
 ![example workflow](https://github.com/ninja095/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 
 Игра: "Проверка на чётность"
+
 Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
 
 [![asciicast](https://asciinema.org/a/FZFqX3QdyCCRxGWyy8RJsoF3j.svg)](https://asciinema.org/a/FZFqX3QdyCCRxGWyy8RJsoF3j)
 
 Игра: "Калькулятор"
+
 Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
 
 [![asciicast](https://asciinema.org/a/5zmJEmGmUMkYaL6UsRonqREpA.svg)](https://asciinema.org/a/5zmJEmGmUMkYaL6UsRonqREpA)
