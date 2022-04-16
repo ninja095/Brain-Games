@@ -6,6 +6,7 @@ const generalLogic = (rule, questionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
+  console.log(rule);
   let countOfAnswer = 0;
   while (countOfAnswer < countOfRounds) {
     const [question, correctAnswer] = questionAndAnswer();
