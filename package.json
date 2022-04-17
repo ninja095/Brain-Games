@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Проект Игры разума, состоит из 5 мини-игр интеллектуального характера",
+  "main": "bin/brain-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
