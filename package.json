@@ -2,8 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/ninja095/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ninja095/frontend-project-lvl1/actions)",
-  "main": "index.js",
+  "description": "Проект Игры разума, состоит из 5 мини-игр интеллектуального характера",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,7 +30,6 @@
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.4"
+    "eslint-plugin-import": "^2.26.0"  
   }
 }
