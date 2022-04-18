@@ -2,14 +2,14 @@ import readlineSync from 'readline-sync';
 
 const countOfRounds = 3;
 
-const generalLogic = (rule, questionAndAnswer) => {
+const playGemeLogic = (rule, getQuestionAndAnswer) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
   let countOfAnswer = 0;
   while (countOfAnswer < countOfRounds) {
-    const [question, correctAnswer] = questionAndAnswer();
+    const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
     const response = readlineSync.question('Your answer: ');
     if (correctAnswer === response) {
@@ -24,4 +24,4 @@ const generalLogic = (rule, questionAndAnswer) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default generalLogic;
+export default playGemeLogic;

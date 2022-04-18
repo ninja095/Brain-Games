@@ -1,9 +1,9 @@
-import getRandomNumber from '../randomNumber.js';
-import generalLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import playGemeLogic from '../index.js';
 
 const rule = 'What number is missing in the progression?';
 
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const startProgression = getRandomNumber(1, 10);
   const stepProgression = getRandomNumber(1, 5);
   const lengthProgression = 10;
@@ -18,6 +18,6 @@ const questionAndAnswer = () => {
   return [question, String(answer)];
 };
 
-const getProgression = () => generalLogic(rule, questionAndAnswer);
+const getProgression = () => playGemeLogic(rule, getQuestionAndAnswer);
 
 export default getProgression;

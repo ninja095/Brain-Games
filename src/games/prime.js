@@ -1,5 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
-import generalLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import playGemeLogic from '../index.js';
 
 const rule = '"yes" if given number is prime. Otherwise answer "no".';
 
@@ -11,12 +11,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const question = getRandomNumber(1, 10);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
-const startPrime = () => generalLogic(rule, questionAndAnswer);
+const startPrime = () => playGemeLogic(rule, getQuestionAndAnswer);
 
 export default startPrime;

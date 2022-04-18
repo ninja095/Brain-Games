@@ -1,5 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
-import generalLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import playGemeLogic from '../index.js';
 
 const rule = 'What is the result of the expression?';
 
@@ -16,7 +16,7 @@ const calculate = (a, b, operation) => {
   }
 };
 
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const operations = ['+', '*', '-'];
   const a = getRandomNumber(0, 10);
   const b = getRandomNumber(0, 10);
@@ -27,7 +27,7 @@ const questionAndAnswer = () => {
 };
 
 const startCalc = () => {
-  generalLogic(rule, questionAndAnswer);
+  playGemeLogic(rule, getQuestionAndAnswer);
 };
 
 export default startCalc;

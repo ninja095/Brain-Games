@@ -1,5 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
-import generalLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import playGemeLogic from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
@@ -11,7 +11,7 @@ const getGCD = (num1, num2) => {
   }
   return gcd;
 };
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const num1 = getRandomNumber(1, 10);
   const num2 = getRandomNumber(1, 10);
   const question = `${num1} ${num2}`;
@@ -29,6 +29,6 @@ function NOD(x, y) {
   return NOD(y, x % y);
 } */
 
-const startGCD = () => generalLogic(rule, questionAndAnswer);
+const startGCD = () => playGemeLogic(rule, getQuestionAndAnswer);
 
 export default startGCD;
