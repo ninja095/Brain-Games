@@ -1,5 +1,5 @@
 
-name: make lint
+name: Node CI
 on: push
 jobs:
   my-job:
