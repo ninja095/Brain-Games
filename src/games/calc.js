@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import playGemeLogic from '../index.js';
+import playGameLogic from '../index.js';
 
 const rule = 'What is the result of the expression?';
 
@@ -27,7 +27,7 @@ const getQuestionAndAnswer = () => {
 };
 
 const startCalc = () => {
-  playGemeLogic(rule, getQuestionAndAnswer);
+  playGameLogic(rule, getQuestionAndAnswer);
 };
 
 export default startCalc;
