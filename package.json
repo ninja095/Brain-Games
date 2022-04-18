@@ -2,8 +2,8 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "Проект Игры разума, состоит из 5 мини-игр интеллектуального характера",
-  "main": "bin/brain-games.js",
+  "description": "Проект #1 'Игры разума', состоит из 5 мини-игр интеллектуального характера",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
