@@ -14,4 +14,4 @@ const startEven = () => {
   playGemeLogic(rule, getQuestionAndAnswer);
 };
 
-export default startEven();
+export default startEven;

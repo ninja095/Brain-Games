@@ -7,14 +7,12 @@ const playGemeLogic = (rule, getQuestionAndAnswer) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
-  let countOfAnswer = 0;
-  while (countOfAnswer < countOfRounds) {
+  for (let i = 0; i < countOfRounds; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
     const response = readlineSync.question('Your answer: ');
     if (correctAnswer === response) {
       console.log('Correct!');
-      countOfAnswer += 1;
     } else {
       console.log(`"${response}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
       console.log(`Let's try again, ${userName}!`);
