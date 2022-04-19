@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import runEngine from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
