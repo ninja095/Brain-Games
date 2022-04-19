@@ -12,7 +12,7 @@ const calculate = (a, b, operation) => {
     case '*': return a * b;
 
     default:
-      throw new Error(`Unknown order state: '${operation}'!`);
+      throw new Error('Unknown operator');
   }
 };
 
