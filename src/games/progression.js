@@ -14,7 +14,7 @@ const getProgression = () => {
 };
 
 const generateRound = () => {
-  const hiddenNumber = getRandomNumber(0, lengthProgression);
+  const hiddenNumber = getRandomNumber(0, lengthProgression - 1);
   const progression = getProgression();
   const answer = progression[hiddenNumber];
   progression[hiddenNumber] = '..';
