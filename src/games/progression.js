@@ -1,9 +1,9 @@
 import getRandomNumber from '../utils.js';
-import playGameLogic from '../index.js';
+import runEngine from '../index.js';
 
 const rule = 'What number is missing in the progression?';
 
-const getQuestionAndAnswer = () => {
+const generateRound = () => {
   const startProgression = getRandomNumber(1, 10);
   const stepProgression = getRandomNumber(1, 5);
   const lengthProgression = 10;
@@ -18,6 +18,6 @@ const getQuestionAndAnswer = () => {
   return [question, String(answer)];
 };
 
-const getProgression = () => playGameLogic(rule, getQuestionAndAnswer);
+const startProgression = () => runEngine(rule, generateRound);
 
-export default getProgression;
+export default startProgression;

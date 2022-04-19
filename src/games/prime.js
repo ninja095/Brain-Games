@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import playGameLogic from '../index.js';
+import runEngine from '../index.js';
 
 const rule = '"yes" if given number is prime. Otherwise answer "no".';
 
@@ -11,12 +11,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const getQuestionAndAnswer = () => {
+const generateRound = () => {
   const question = getRandomNumber(1, 10);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
-const startPrime = () => playGameLogic(rule, getQuestionAndAnswer);
+const startPrime = () => runEngine(rule, generateRound);
 
 export default startPrime;

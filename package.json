@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "Проект #1 'Игры разума', состоит из 5 мини-игр интеллектуального характера",
+  "description": "Project #1 'Brain Games', consists of 5 intellectual mini-games",
   
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

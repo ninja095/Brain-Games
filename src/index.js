@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 
-const countOfRounds = 3;
+const roundsCount = 3;
 
-const playGameLogic = (rule, getQuestionAndAnswer) => {
+const runEngine = (rule, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rule);
-  for (let i = 0; i < countOfRounds; i += 1) {
-    const [question, correctAnswer] = getQuestionAndAnswer();
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, correctAnswer] = generateRound();
     console.log(`Question: ${question}`);
     const response = readlineSync.question('Your answer: ');
     if (correctAnswer === response) {
@@ -22,4 +22,4 @@ const playGameLogic = (rule, getQuestionAndAnswer) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default playGameLogic;
+export default runEngine;

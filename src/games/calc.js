@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import playGameLogic from '../index.js';
+import runEngine from '../index.js';
 
 const rule = 'What is the result of the expression?';
 
@@ -12,11 +12,11 @@ const calculate = (a, b, operation) => {
     case '*': return a * b;
 
     default:
-      return null;
+      throw new Error(`Unknown order state: '${operation}'!`);
   }
 };
 
-const getQuestionAndAnswer = () => {
+const generateRound = () => {
   const operations = ['+', '*', '-'];
   const a = getRandomNumber(0, 10);
   const b = getRandomNumber(0, 10);
@@ -27,7 +27,7 @@ const getQuestionAndAnswer = () => {
 };
 
 const startCalc = () => {
-  playGameLogic(rule, getQuestionAndAnswer);
+  runEngine(rule, generateRound);
 };
 
 export default startCalc;
