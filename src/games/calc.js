@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 import runEngine from '../index.js';
 
 const rule = 'What is the result of the expression?';
