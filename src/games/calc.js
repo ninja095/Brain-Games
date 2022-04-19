@@ -17,10 +17,10 @@ const calculate = (a, b, operation) => {
 };
 
 const generateRound = () => {
-  const operations = ['+', '*', '-'];
+  const operations = ['+', '-', '*'];
   const a = getRandomNumber(0, 10);
   const b = getRandomNumber(0, 10);
-  const operation = operations[getRandomNumber(0, operations.length)];
+  const operation = operations[getRandomNumber(0, operations.length - 1)];
   const question = `${a} ${operation} ${b}`;
   const answer = calculate(a, b, operation);
   return [question, String(answer)];
