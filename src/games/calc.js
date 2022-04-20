@@ -3,26 +3,27 @@ import runEngine from '../index.js';
 
 const rule = 'What is the result of the expression?';
 
-const calculate = (a, b, operation) => {
+const calculate = (operand1, operand2, operation) => {
   switch (operation) {
-    case '+': return a + b;
+    case '+': return operand1 + operand2;
 
-    case '-': return a - b;
+    case '-': return operand1 - operand2;
 
-    case '*': return a * b;
+    case '*': return operand1 * operand2;
 
     default:
-      throw new Error('Unknown operator');
+      throw new Error(`Unknown operator: ${operation}`);
   }
 };
 
 const generateRound = () => {
   const operations = ['+', '-', '*'];
-  const a = getRandomNumber(0, 10);
-  const b = getRandomNumber(0, 10);
-  const operation = operations[getRandomNumber(0, operations.length - 1)];
-  const question = `${a} ${operation} ${b}`;
-  const answer = calculate(a, b, operation);
+  const operand1 = getRandomNumber(0, 10);
+  const operand2 = getRandomNumber(0, 10);
+  const randomNum = getRandomNumber(0, operations.length - 1);
+  const operation = operations[randomNum];
+  const question = `${operand1} ${operation} ${operand2}`;
+  const answer = calculate(operand1, operand2, operation);
   return [question, String(answer)];
 };
 
