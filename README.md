@@ -3,31 +3,31 @@
 ![Make Lint](https://github.com/ninja095/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
 
 
-## Игра: "Проверка на чётность"
+## Game: "Evenness Check"
 
-Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
+The essence of the game is as follows: a random number is shown to the user. And he needs to answer yes if the number is even or no if it is odd.:
 
 [![asciicast](https://asciinema.org/a/FZFqX3QdyCCRxGWyy8RJsoF3j.svg)](https://asciinema.org/a/FZFqX3QdyCCRxGWyy8RJsoF3j)
 
-## Игра: "Калькулятор"
+## Game: "Calculator"
 
-Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+The essence of the game is as follows: a random mathematical expression is shown to the user, for example 35 + 16, which needs to be calculated and the correct answer written.
 
 [![asciicast](https://asciinema.org/a/5zmJEmGmUMkYaL6UsRonqREpA.svg)](https://asciinema.org/a/5zmJEmGmUMkYaL6UsRonqREpA)
 
-## Игра "НОД"
-Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+## The game "GCD" (Greatest Common Divisor)
+The essence of the game is as follows: the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.
 
 [![asciicast](https://asciinema.org/a/VVHKEaEYNsQqFHo96liNnW3ne.svg)](https://asciinema.org/a/VVHKEaEYNsQqFHo96liNnW3ne)
 =======
 
-## Игра "Арифметическая прогрессия"
-Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
+## "Arithmetic Progression" game.
+We show the player a series of numbers forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
 
 [![asciicast](https://asciinema.org/a/oFnFnqt0lgzT8u90bkUbB0ezL.svg)](https://asciinema.org/a/oFnFnqt0lgzT8u90bkUbB0ezL)
 
-## Игра "Простое ли число?"
+## The game "Is it a prime number?"
 
-Имеется странное явление, игра показывает число 4 и говорит, что оно простое, хотя оно таковым не является. будем фиксить логику. Значит где-то допустили ошибку!
+There is a strange phenomenon, the game shows the number 4 and says it is prime, although it is not. We will fix the logic. So somewhere we made a mistake!
 
 [![asciicast](https://asciinema.org/a/2AjaJZqKuYkV9Swuv4u3YnOB2.svg)](https://asciinema.org/a/2AjaJZqKuYkV9Swuv4u3YnOB2)
